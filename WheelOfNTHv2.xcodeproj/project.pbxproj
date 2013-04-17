@@ -18,6 +18,12 @@
 		F4396A31171E9D0100EB9511 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4396A30171E9D0100EB9511 /* Default-568h@2x.png */; };
 		F4396A34171E9D0100EB9511 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4396A33171E9D0100EB9511 /* ViewController.m */; };
 		F4396A37171E9D0100EB9511 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4396A35171E9D0100EB9511 /* ViewController.xib */; };
+		F4396A40171E9D1500EB9511 /* RotaryWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4396A3E171E9D1500EB9511 /* RotaryWheel.m */; };
+		F4396A42171E9D2E00EB9511 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4396A41171E9D2E00EB9511 /* QuartzCore.framework */; };
+		F4396A45171EA29F00EB9511 /* Names.m in Sources */ = {isa = PBXBuildFile; fileRef = F4396A44171EA29F00EB9511 /* Names.m */; };
+		F4396A4B171ED68C00EB9511 /* RDDRotationControlSurface.m in Sources */ = {isa = PBXBuildFile; fileRef = F4396A4A171ED68C00EB9511 /* RDDRotationControlSurface.m */; };
+		F4396A51171EE4F100EB9511 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F4396A50171EE4F100EB9511 /* Utils.m */; };
+		F4396A57171EE81A00EB9511 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = F4396A56171EE81A00EB9511 /* triangle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,16 @@
 		F4396A32171E9D0100EB9511 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F4396A33171E9D0100EB9511 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F4396A36171E9D0100EB9511 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		F4396A3D171E9D1500EB9511 /* RotaryWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotaryWheel.h; sourceTree = "<group>"; };
+		F4396A3E171E9D1500EB9511 /* RotaryWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotaryWheel.m; sourceTree = "<group>"; };
+		F4396A41171E9D2E00EB9511 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F4396A43171EA29F00EB9511 /* Names.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Names.h; sourceTree = "<group>"; };
+		F4396A44171EA29F00EB9511 /* Names.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Names.m; sourceTree = "<group>"; };
+		F4396A49171ED68C00EB9511 /* RDDRotationControlSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDDRotationControlSurface.h; sourceTree = "<group>"; };
+		F4396A4A171ED68C00EB9511 /* RDDRotationControlSurface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDDRotationControlSurface.m; sourceTree = "<group>"; };
+		F4396A4F171EE4F100EB9511 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		F4396A50171EE4F100EB9511 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		F4396A56171EE81A00EB9511 /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4396A42171E9D2E00EB9511 /* QuartzCore.framework in Frameworks */,
 				F4396A1B171E9D0100EB9511 /* UIKit.framework in Frameworks */,
 				F4396A1D171E9D0100EB9511 /* Foundation.framework in Frameworks */,
 				F4396A1F171E9D0100EB9511 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +90,7 @@
 		F4396A19171E9D0100EB9511 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F4396A41171E9D2E00EB9511 /* QuartzCore.framework */,
 				F4396A1A171E9D0100EB9511 /* UIKit.framework */,
 				F4396A1C171E9D0100EB9511 /* Foundation.framework */,
 				F4396A1E171E9D0100EB9511 /* CoreGraphics.framework */,
@@ -88,6 +106,15 @@
 				F4396A32171E9D0100EB9511 /* ViewController.h */,
 				F4396A33171E9D0100EB9511 /* ViewController.m */,
 				F4396A35171E9D0100EB9511 /* ViewController.xib */,
+				F4396A3D171E9D1500EB9511 /* RotaryWheel.h */,
+				F4396A3E171E9D1500EB9511 /* RotaryWheel.m */,
+				F4396A43171EA29F00EB9511 /* Names.h */,
+				F4396A44171EA29F00EB9511 /* Names.m */,
+				F4396A4F171EE4F100EB9511 /* Utils.h */,
+				F4396A50171EE4F100EB9511 /* Utils.m */,
+				F4396A49171ED68C00EB9511 /* RDDRotationControlSurface.h */,
+				F4396A4A171ED68C00EB9511 /* RDDRotationControlSurface.m */,
+				F4396A56171EE81A00EB9511 /* triangle.png */,
 				F4396A21171E9D0100EB9511 /* Supporting Files */,
 			);
 			path = WheelOfNTHv2;
@@ -163,6 +190,7 @@
 				F4396A2F171E9D0100EB9511 /* Default@2x.png in Resources */,
 				F4396A31171E9D0100EB9511 /* Default-568h@2x.png in Resources */,
 				F4396A37171E9D0100EB9511 /* ViewController.xib in Resources */,
+				F4396A57171EE81A00EB9511 /* triangle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +204,10 @@
 				F4396A27171E9D0100EB9511 /* main.m in Sources */,
 				F4396A2B171E9D0100EB9511 /* AppDelegate.m in Sources */,
 				F4396A34171E9D0100EB9511 /* ViewController.m in Sources */,
+				F4396A40171E9D1500EB9511 /* RotaryWheel.m in Sources */,
+				F4396A45171EA29F00EB9511 /* Names.m in Sources */,
+				F4396A4B171ED68C00EB9511 /* RDDRotationControlSurface.m in Sources */,
+				F4396A51171EE4F100EB9511 /* Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RDDRotationControlSurface.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <RDDRotationControlSurfaceDelegate>
 
 @end
