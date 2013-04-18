@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
+
+@protocol valuesDelegate <NSObject>
+
+- (void)newValuesSet:(NSArray*)values;
+
+@end
 
 @interface NewValuesViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
 
-
-@property (strong, nonatomic) ViewController *parent;
+@property (nonatomic, weak) id <valuesDelegate> delegate;
 
 @end

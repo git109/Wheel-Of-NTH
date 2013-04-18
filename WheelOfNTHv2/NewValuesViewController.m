@@ -12,7 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *text;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
 @property (nonatomic, strong) NSMutableArray *values;
 
 @end
@@ -21,7 +20,6 @@
 @synthesize text;
 @synthesize tableView;
 @synthesize values;
-@synthesize parent;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,6 +39,7 @@
 	self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ps_neutral"]];
     // Do any additional setup after loading the view from its nib.
 }
+
 - (IBAction)addButton:(id)sender
 {
 	if (![self.text.text isEqualToString:@""])
@@ -50,15 +49,14 @@
 		self.text.text = @"";
 	}
 }
+
 - (IBAction)doneButton:(id)sender
 {
-	[[NSNotificationCenter defaultCenter] postNotificationName:@"ModalDismissed"
-														object:nil
-													  userInfo:nil];
+	[self.delegate newValuesSet:self.values];
 	
 	[self dismissViewControllerAnimated:YES completion:nil];
-	self.parent.objects = self.values;
 }
+
 - (IBAction)cancelButton:(id)sender
 {
 	[self dismissViewControllerAnimated:YES completion:nil];
@@ -66,7 +64,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-	[self addButton:nil];
+	[self addButton:textField];
 	return YES;
 }
 #pragma mark - Table View Delegate Methods
@@ -92,7 +90,5 @@
 {
 	return @"Values";
 }
-
-
 
 @end

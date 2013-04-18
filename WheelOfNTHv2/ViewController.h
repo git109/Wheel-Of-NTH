@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "RDDRotationControlSurface.h"
 #import "XYPieChart.h"
+#import "NewValuesViewController.h"
 
-@interface ViewController : UIViewController <RDDRotationControlSurfaceDelegate, XYPieChartDelegate, XYPieChartDataSource, UITableViewDataSource, UITableViewDelegate>
+@interface ViewController : UIViewController <RDDRotationControlSurfaceDelegate, XYPieChartDelegate, XYPieChartDataSource, UITableViewDataSource, UITableViewDelegate, valuesDelegate>
 
 @property (nonatomic, strong) NSMutableArray *objects;
 
