@@ -49,6 +49,9 @@
 		im.layer.position = CGPointMake(container.bounds.size.width/2.0, container.bounds.size.height/2.0);
 		im.transform = CGAffineTransformMakeRotation(angleSize * i);
 		im.tag = i;
+		
+		CGContextAddArc(UIGraphicsGetCurrentContext(), 150, 150, 20, 20, 20, 1);
+		
 		[container addSubview:im];
 	}
 	container.userInteractionEnabled = NO;
@@ -61,6 +64,18 @@
 	NSString *name = [self.names objectAtIndex:r];
 	[self.names removeObjectAtIndex:r];
 	return name;
+}
+
+- (void)drawRect:(CGRect)rect
+{
+    CGContextRef context= UIGraphicsGetCurrentContext();
+	
+    CGContextSetFillColorWithColor(context, [Utils randomColor].CGColor);
+    CGContextSetAlpha(context, 0.5);
+    CGContextFillEllipseInRect(context, CGRectMake(0,0,self.frame.size.width,self.frame.size.height));
+	
+    CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
+    CGContextStrokeEllipseInRect(context, CGRectMake(0,0,self.frame.size.width,self.frame.size.height));
 }
 
 @end

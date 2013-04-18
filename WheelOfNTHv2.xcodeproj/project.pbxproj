@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F427C75A171FD33700EBE15D /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F427C759171FD33700EBE15D /* Icon-72@2x.png */; };
+		F427C75C171FD33A00EBE15D /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F427C75B171FD33A00EBE15D /* Icon-72.png */; };
+		F427C762171FDA0200EBE15D /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F427C761171FDA0200EBE15D /* XYPieChart.m */; };
+		F427C76B171FEFFB00EBE15D /* NewValuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F427C769171FEFFB00EBE15D /* NewValuesViewController.m */; };
+		F427C76C171FEFFB00EBE15D /* NewValuesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F427C76A171FEFFB00EBE15D /* NewValuesViewController.xib */; };
 		F4396A1B171E9D0100EB9511 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4396A1A171E9D0100EB9511 /* UIKit.framework */; };
 		F4396A1D171E9D0100EB9511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4396A1C171E9D0100EB9511 /* Foundation.framework */; };
 		F4396A1F171E9D0100EB9511 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4396A1E171E9D0100EB9511 /* CoreGraphics.framework */; };
@@ -27,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F427C759171FD33700EBE15D /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "../Icon-72@2x.png"; sourceTree = "<group>"; };
+		F427C75B171FD33A00EBE15D /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../Icon-72.png"; sourceTree = "<group>"; };
+		F427C760171FDA0200EBE15D /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
+		F427C761171FDA0200EBE15D /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
+		F427C768171FEFFB00EBE15D /* NewValuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewValuesViewController.h; sourceTree = "<group>"; };
+		F427C769171FEFFB00EBE15D /* NewValuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewValuesViewController.m; sourceTree = "<group>"; };
+		F427C76A171FEFFB00EBE15D /* NewValuesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewValuesViewController.xib; sourceTree = "<group>"; };
 		F4396A17171E9D0100EB9511 /* WheelOfNTHv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheelOfNTHv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4396A1A171E9D0100EB9511 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F4396A1C171E9D0100EB9511 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,6 +82,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F427C75D171FD9D800EBE15D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F4396A56171EE81A00EB9511 /* triangle.png */,
+				F427C75B171FD33A00EBE15D /* Icon-72.png */,
+				F427C759171FD33700EBE15D /* Icon-72@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F427C75E171FD9E100EBE15D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F4396A43171EA29F00EB9511 /* Names.h */,
+				F4396A44171EA29F00EB9511 /* Names.m */,
+				F4396A4F171EE4F100EB9511 /* Utils.h */,
+				F4396A50171EE4F100EB9511 /* Utils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		F427C75F171FD9E800EBE15D /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				F427C760171FDA0200EBE15D /* XYPieChart.h */,
+				F427C761171FDA0200EBE15D /* XYPieChart.m */,
+				F4396A49171ED68C00EB9511 /* RDDRotationControlSurface.h */,
+				F4396A4A171ED68C00EB9511 /* RDDRotationControlSurface.m */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
 		F4396A0E171E9D0100EB9511 = {
 			isa = PBXGroup;
 			children = (
@@ -106,15 +150,14 @@
 				F4396A32171E9D0100EB9511 /* ViewController.h */,
 				F4396A33171E9D0100EB9511 /* ViewController.m */,
 				F4396A35171E9D0100EB9511 /* ViewController.xib */,
+				F427C768171FEFFB00EBE15D /* NewValuesViewController.h */,
+				F427C769171FEFFB00EBE15D /* NewValuesViewController.m */,
+				F427C76A171FEFFB00EBE15D /* NewValuesViewController.xib */,
 				F4396A3D171E9D1500EB9511 /* RotaryWheel.h */,
 				F4396A3E171E9D1500EB9511 /* RotaryWheel.m */,
-				F4396A43171EA29F00EB9511 /* Names.h */,
-				F4396A44171EA29F00EB9511 /* Names.m */,
-				F4396A4F171EE4F100EB9511 /* Utils.h */,
-				F4396A50171EE4F100EB9511 /* Utils.m */,
-				F4396A49171ED68C00EB9511 /* RDDRotationControlSurface.h */,
-				F4396A4A171ED68C00EB9511 /* RDDRotationControlSurface.m */,
-				F4396A56171EE81A00EB9511 /* triangle.png */,
+				F427C75E171FD9E100EBE15D /* Utils */,
+				F427C75F171FD9E800EBE15D /* Libs */,
+				F427C75D171FD9D800EBE15D /* Images */,
 				F4396A21171E9D0100EB9511 /* Supporting Files */,
 			);
 			path = WheelOfNTHv2;
@@ -191,6 +234,9 @@
 				F4396A31171E9D0100EB9511 /* Default-568h@2x.png in Resources */,
 				F4396A37171E9D0100EB9511 /* ViewController.xib in Resources */,
 				F4396A57171EE81A00EB9511 /* triangle.png in Resources */,
+				F427C75A171FD33700EBE15D /* Icon-72@2x.png in Resources */,
+				F427C75C171FD33A00EBE15D /* Icon-72.png in Resources */,
+				F427C76C171FEFFB00EBE15D /* NewValuesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +254,8 @@
 				F4396A45171EA29F00EB9511 /* Names.m in Sources */,
 				F4396A4B171ED68C00EB9511 /* RDDRotationControlSurface.m in Sources */,
 				F4396A51171EE4F100EB9511 /* Utils.m in Sources */,
+				F427C762171FDA0200EBE15D /* XYPieChart.m in Sources */,
+				F427C76B171FEFFB00EBE15D /* NewValuesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +380,7 @@
 				F4396A3C171E9D0100EB9511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
