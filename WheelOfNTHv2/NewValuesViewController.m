@@ -38,6 +38,7 @@
 {
     [super viewDidLoad];
 	self.text.delegate = self;
+	self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ps_neutral"]];
     // Do any additional setup after loading the view from its nib.
 }
 - (IBAction)addButton:(id)sender

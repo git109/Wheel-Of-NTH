@@ -36,6 +36,7 @@
 {
     [super viewDidLoad];
 	
+	self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ps_neutral"]];
 	//self.wheel = [[RotaryWheel alloc] initWithFrame:CGRectMake(0, 0, 750, 750)];
 	//[self.view insertSubview:self.wheel atIndex:0];
 	
@@ -140,7 +141,6 @@
 
 - (void)reloadChartWithNewValues
 {
-	NSLog(@"%i",self.objects.count);
 	if (self.objects.count > 0)
 		[self.chart reloadData];
 }
